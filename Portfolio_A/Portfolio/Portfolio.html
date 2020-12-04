@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Project A-1</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">포트폴리오</h1>
+    </header>
+
+    <div class="menu">
+        <nav>
+        <div class="menuitem"><a href="#table">테이블 요소</a></div><div class="menuitem"><a href="#form">폼 요소</a></div><div class="menuitem"><a href="#list">리스트 요소</a></div>
+        </nav>
+    </div>
+
+    <h2 class="subtitle">
+        구성 요소
+    </h2>
+
+
+    <h3 class="topbox">
+        테이블 요소
+    </h3>
+    <div class="bottombox" id="table">
+
+        <table class="first-table">
+            <caption>아동 사이즈</caption>
+            <colgroup>
+                <col style="width: 200px">
+                <col span="7">
+                <col style="width: 164px">
+            </colgroup>
+            <thead>
+                <tr class="kids-size">
+                    <th scope="col" colspan="2">구분</th>
+                    <th scope="col" colspan="2">Small</th>
+                    <th scope="col" colspan="2">Medium</th>
+                    <th scope="col" colspan="2">Large</th>
+                    <th scope="colgroup">X-Large</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">미국 남아<br>[Boys 2-7]</th>
+                    <th scope="row">사이즈</th>
+                    <td>2T</td>
+                    <td>3T</td>
+                    <td>4T</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">키</th>
+                    <td>84-91</td>
+                    <td>91-99</td>
+                    <td>91-99</td>
+                    <td>99-107</td>
+                    <td>107-114</td>
+                    <td>114-122</td>
+                    <td>122-130</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">몸무게</th>
+                    <td>13-15</td>
+                    <td>14-15</td>
+                    <td>13-15</td>
+                    <td>14-15</td>
+                    <td>19-21</td>
+                    <td>20-23</td>
+                    <td>23-25</td>
+                </tr>
+
+                <tr>
+                    <th scope="rowgroup" rowspan="3">미국 여아<br>[Girls 2-6X]</th>
+                    <th scope="row">사이즈</th>
+                    <td>2T</td>
+                    <td>3T</td>
+                    <td>4T</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6X</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">키</th>
+                    <td>84-91</td>
+                    <td>91-99</td>
+                    <td>91-99</td>
+                    <td>99-107</td>
+                    <td>107-114</td>
+                    <td>114-122</td>
+                    <td>122-130</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">몸무게</th>
+                    <td>13-15</td>
+                    <td>14-15</td>
+                    <td>13-15</td>
+                    <td>14-15</td>
+                    <td>19-21</td>
+                    <td>20-23</td>
+                    <td>23/25</td>
+                </tr>
+        </tbody>
+        </table>
+
+
+        <table class="second-table">
+            <caption>환불 가능 금액 조회</caption>
+                <col class="second-table-firstcol">
+                <col class="second-table-col">
+                <col class="second-table-col">
+                <col class="second-table-col">
+            <thead>
+                <tr>
+                    <th class="second-table-left">구분</th>
+                    <th class="price" scope="row">환불가능액</th>
+                    <th class="price" scope="row">수수료</th>
+                    <th class="price" scope="row">총 환불금액</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th class="second-table-left" scope="col">게임 보상금액</th>
+                    <td class="price">100,000원</td>
+                    <td class="price">1,000원</td>
+                    <td class="price">99,000원</td>
+                </tr>
+
+                <tr>
+                    <th class="second-table-left" scope="col">월정액제 보상금액</th>
+                    <td class="price">10,000원</td>
+                    <td class="price">5,000원</td>
+                    <td class="price">5,000원</td>
+                </tr>
+
+                <tr>
+                    <th class="second-table-left" scope="col">코인</th>
+                    <td class="price">9,000원</td>
+                    <td class="price">500원</td>
+                    <td class="price">8,500원</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th class="second-table-left" scope="col">총합계</th>
+                    <td class="price">119,000원</td>
+                    <td class="price">6,500원</td>
+                    <td class="price">112,500원</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <h3 class="topbox">
+        폼 요소
+    </h3>
+    <div class="bottombox" id="form">
+        <form action="#" method="post">
+            <fieldset>
+                <legend class="join">
+                    회원가입
+                </legend>
+                <div class="formcontent">
+
+                    <p class="persnalinfo-title"><label for="userid">아이디</label></p>
+                    <input type="text" name="id" class="persnalinfo" id="userid">
+
+                    <p class="persnalinfo-title"><label for="userpw">비밀번호</label></p>
+                    <input type="password" name="password" class="persnalinfo"
+                    id="userpw">
+
+                    <p class="persnalinfo-title"><label for="username">이름</label></p>
+                    <input type="text" name="name" class="persnalinfo"
+                    id="username">
+
+                    <p class="persnalinfo-title">생년월일</p>
+                    <label class="blind" for="birth_year">생년</label>
+                    <select class="birthday" name="생년" id="birth_year">
+                        <option selected>생년</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                    </select>
+                    <label for="birth_month" class="blind">월</label>
+                    <select class="birthday" name="월" id="birth_month">
+                        <option selected>월</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <label for="birth_day" class="blind">일</label>
+                    <select class="birthday" name="일" id="birth_day">
+                        <option selected>일</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+
+                    <p class="persnalinfo-title">성별</p>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male" class="gendertext">남자</label>
+
+                    <input type="radio" name="gender" id="female">
+                    <label for="female" class="gendertext">여자</label>
+
+                    <p class="persnalinfo-title"><label for="emailadd">이메일</label></p>
+                    <input type="email" name="email" id="emailadd"
+                    placeholder="이메일 주소에 '@'를 포함해주세요." class="emailinput">
+
+                    <p class="persnalinfo-title"><label for="phonenum">휴대전화</label></p>
+                    <input type="tel" name="tel" id="phonenum"
+                    placeholder="숫자만 입력해주세요." class="tel">
+
+                    <button type="button" name="certify" class="certify">
+                        인증번호 받기
+                    </button>
+
+                    <input type="text" name="certifynum"
+                    placeholder="인증번호를 입력해주세요." class="certifynum">
+
+                    <p class="persnalinfo-title">취미</p>
+                    <input type="checkbox" name="hobby" id="sport">
+                    <label for="sport" class="checkboxtext">운동</label>
+
+                    <input type="checkbox" name="hobby" id="cook">
+                    <label for="cook" class="checkboxtext">요리</label>
+
+                    <input type="checkbox" name="hobby" id="tour">
+                    <label for="tour" class="checkboxtext">여행</label>
+
+                    <input type="checkbox" name="hobby" id="game">
+                    <label for="game" class="checkboxtext">게임</label>
+
+                    <input type="checkbox" name="hobby" id="computer">
+                    <label for="computer" class="checkboxtext">컴퓨터</label>
+
+                    <input type="checkbox" name="hobby" id="music">
+                    <label for="music" class="checkboxtext">음악</label>
+
+                    <input type="checkbox" name="hobby" id="movie">
+                    <label for="movie" class="checkboxtext">영화</label>
+
+                    <input type="checkbox" name="hobby" id="read">
+                    <label for="read" class="checkboxtext">독서</label><br>
+
+                    <p class="persnalinfo-title"><label for="greetingtext">가입인사</label></p>
+                    <textarea name="greeting" rows="5" class="greetinginput" id="greetingtext"></textarea>
+
+                    <button type="button" name="joinbotton" class="joinbotton">
+                        가입하기
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+
+    <h3 class="topbox">
+        리스트 요소
+    </h3>
+    <div class="bottombox" id="list">
+        <h4 class="list-title">'프로젝트' 사전 검색 결과</h4>
+            <div class="project-list">
+                <h5 class="fir-list-title">프로젝트</h5>
+                <dl>
+                    <dt class="main-dt">프로젝트 <span class="sub-dt">영양학사전</span></dt>
+                    <dd>연구나 새로운 사업의 개발을 위한 유기적이고 조직적인 계획.
+                        원자력 개발이나 우주개발 등은 대형 프로젝트를 조직하여 이루어진다.
+                        일반적으로는 특정한 목표, 계획을 위한 학습활동, 실행계획 등을 가리킨다.</dd>
+                    <dt class="main-dt">프로젝트 Basic <span class="sub-dt">중학생을 위한 기술, 가정 용어사전</span></dt>
+                    <dd>어떤 특정한 목적 달성을 위하여 실시되는 시스템 개발, 프로그램 설계,
+                        연구 개발 계획 혹은 건설 공사 등과 같이 한 번에 그치는 성격을 갖는 단위 작업이나 사업.</dd>
+                </dl>
+            </div>
+        <h4 class="list-title">실시간 검색어</h4>
+            <ol class="realtime-list">
+                <li class="ol-list"><div class="ol-listnum">1</div>
+                <a href="#" class="ol-list-link">입추</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">2</div>
+                <a href="#" class="ol-list-link">런닝맨 유재석</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">3</div>
+                <a href="#" class="ol-list-link">런닝맨</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">4</div>
+                <a href="#" class="ol-list-link">소나기</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">5</div>
+                <a href="#" class="ol-list-link">주간 날씨</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">6</div>
+                <a href="#" class="ol-list-link">깔라만시</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">7</div>
+                <a href="#" class="ol-list-link">내 아이디는 강남미인</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">8</div>
+                <a href="#" class="ol-list-link">차은우</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">9</div>
+                <a href="#" class="ol-list-link">한국사능력검정시험</a></li>
+
+                <li class="ol-list"><div class="ol-listnum">10</div>
+                <a href="#" class="ol-list-link">맛있는 녀석들</a></li>
+                </ol>
+
+
+        <h4 class="list-title">쿠키 이용안내</h4>
+            <div class="ul-border">
+                <ul class="ul-list">
+                    <li><strong class="ul-highlight-blue">웹툰 작품</strong>은 쿠키를 사용하여 대여/구매 하실 수 있습니다.</li>
+
+                    <li>쿠키 구매 시 지급되는 보너스 쿠키의 수량은 변경될 수 있으며,
+                        <strong class="ul-highlight-red">유효기간은 지급 후 90일</strong>입니다</li>
+
+                    <li>구매 후 7일 이내, 사용하지 않은 쿠키 패키지는 <a href="#" class="ul-link">구매내역</a>에서 직접 구매 취소할 수 있습니다.</li>
+
+                    <li>일부 사용 후 잔여 쿠키에 대한 구매 취소는 고객센터를 통해 가능하며,
+                        쿠키 구매 시 지급된 보너스 쿠키를 사용한 경우에는 해당 분량을 제외하고 환불됩니다.</li>
+
+                    <li>쿠키 구매 또는 사용 전 이용약관 동의가 필요합니다.<br><a href="#" class="ul-link">쿠키 이용약관</a> </li>
+                </ul>
+            </div>
+
+            <h4 class="list-title">뉴스</h4>
+                <div class="news-border">
+                    <ol>
+                        <li class="news-article">
+                            <a href="#" class="news-link">
+                                <img src="./image/thumbnail1.jpg" alt="news-image" class="thumbnail1">
+                            </a>
+                            <a href="#" class="news-title">
+                                [날씨] 내일도 35도 안팎 폭염・내륙 소나기⋯습도 높아 후텁지근
+                            </a>
+                            오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다.
+                            일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를 누그러뜨리진 못했는데요.
+                            동해안을 제외한 전국 대부분 지방에 폭염 특보가 이어지는 가운데 내일도 한낮에
+                            서울과 대전 35도, 광주와 대구가 36도까지 오를 것으로 예상됩니다.
+                            내일도 대기가 불안정해지면서 오후에 내륙에는 소나기가 지나는 곳이 있겠습니다.
+                        </li>
+
+
+                        <li class="news-article">
+                            <a href="#" class="news-title">
+                                [펫카드] 강아지 중성화가 필요한 이유
+                            </a>
+                            (서울=뉴스1) 최서윤 기자,방은영 디자이너 = 강아지 중성화 수술을 놓고 찬반이 팽팽하게 엇갈린다.
+                            많은 사람들은 사람들과 공존하려면 개체수 조절을 위해 필요하다고 주장한다.
+                            그러나 어떤 사람들은 인위적인 수술은 안된다며 반대한다.
+                        </li>
+
+
+                        <li class="news-article">
+                            <a href="#" class="news-link">
+                                <img src="./image/thumbnail1.jpg" alt="news-image" class="thumbnail1">
+                            </a>
+                            <a href="#" class="news-title">
+                                다이어트에 좋은 여름 복숭아, 먹으면 안 되는 사람 있어
+                            </a>
+                            복숭아가 제철이다. 여름 복숭아는 다양한 건강 효과를 낸다. 복숭아에는 포도당, 과당,
+                            수분이 풍부하고 유기산(산성을 띠는 물질로 식품에서 신맛을 냄)이 0.5% 정도로 적게 들어 단맛이 강하다.
+                            복숭아의 열량은 100g당 36kcal다. 복숭아 한 개에 약 100kcal 정도다.
+                            포만감에 비해 열량이 적은 편이어서 다이어트를하는 사람에게도 좋다. 비타민이 많아서 피로 해소에 도움이 된다.
+                        </li>
+                    </ol>
+                </div>
+
+        <h4 class="list-title">웹툰</h4>
+            <div class="webtoon-border">
+                <ol class="webtoon_ol">
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="webtoon-title">하루 3컷</div>
+                            <div class="webtoon-episode">17화 편리하게 피곤하게</div>
+                        </a>
+                    </li>
+
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="cut-toon">컷툰</div><div class="webtoon-title">유미의 세포들</div>
+                            <div class="webtoon-episode">326화 미래에서 온 텔레파시</div>
+                        </a>
+                    </li>
+
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="webtoon-title">이말년씨리즈 2018</div>
+                            <div class="webtoon-episode">58화 공포의 떡볶이</div>
+                        </a>
+                    </li>
+
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="smart-toon">스마트툰</div><div class="webtoon-title">덴마</div>
+                            <div class="webtoon-episode">195화 1.다이크(195)</div>
+                        </a>
+                    </li>
+
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="cut-toon">컷툰</div><div class="webtoon-title">1인용 기분</div>
+                            <div class="webtoon-episode">20화 평가</div>
+                        </a>
+                    </li>
+
+                    <li class="webtoon-item">
+                        <a href="#">
+                            <img src="./image/thumbnail2.jpg" alt="webtoon-image" class="webtoon-images">
+                            <div class="webtoon-title">찬란하지 않아도 괜찮아</div>
+                            <div class="webtoon-episode">56화 숨길 수 없어요.</div>
+                        </a>
+                    </li>
+                </ol>
+            </div>
+    </div>
+
+
+<footer>
+    <span class="foottop">주소: Austria Linz E-Mail: vocalyc@naver.com</span><br>
+    <span class="footbottom">Copyright © Kim YoungChan. All Rights Reserved</span>
+</footer>
+</body>
+
+</html>

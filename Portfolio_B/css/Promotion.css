@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a, em, img, strong,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+aside, footer, header,
+menu, nav, button{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font-family: '나눔고딕', Nanumgothic, Dotum, '돋움', sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET */
+body{
+	width: 100%;
+	height: 100%;
+}
+
+.blind{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+.logo_background{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 66px;
+	background-color: rgba(64, 64, 64, 0.75);
+	z-index: 2;
+}
+
+.logo_link{
+	background: url(../image/logo.png) no-repeat center center;
+	position: absolute;
+	width: 106px;
+	height: 22px;
+	margin-top: 22px;
+	left: 50%;
+	margin-left: -510px;
+}
+
+.foodwith_wrap{
+	background: url(../image/section_invite.jpg) no-repeat center;
+	height: 750px;
+	background-color: #fff;
+}
+
+.creator_wrap{
+	background: url(../image/section_creator.jpg) no-repeat center;
+	width: 100%;
+	height: 822px;
+	margin: 0 auto;
+	background-color: #f9939d;
+}
+
+.store_wrap{
+	background: url(../image/section_store.jpg) no-repeat center;
+	width: 100%;
+	height: 1084px;
+	background-color: #d5e43f;
+}
+
+.store_list{
+	width: 980px;
+	margin: 0 auto;
+	padding-top: 300px;
+}
+
+.store_item{
+	display: inline-block;
+	margin-right: 15px;
+	position: relative;
+	margin-bottom: 140px;
+}
+
+.store_item:nth-child(4n+4){
+	margin-right: 0;
+}
+
+.store_img_wrap{
+	width: 230px;
+	height: 230px;
+}
+
+.store_img_wrap img{
+	border-radius: 10px;
+	margin-bottom: 140px;
+}
+
+.store_img_wrap a{
+	display: block;
+	width: 230px;
+	height: 230px;
+}
+
+.dimmed_wrap{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	color: #fff;
+	background-color: rgba(96, 132, 2, 0.9);
+	border-radius: 10px;
+}
+
+.dimmed_text_wrap{
+	margin-top: 66px;
+}
+
+.percent{
+	font-size: 65px;
+	font-weight: bold;
+}
+
+.time{
+	font-size: 20px;
+}
+
+.store_item a:hover .dimmed_wrap,
+.store_item a:focus .dimmed_wrap{
+	display: block;
+}
+
+.item_title{
+	display: block;
+	font-size: 20px;
+	color: #1b1d21;
+	padding: 0 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.item_price{
+	font-size: 28px;
+	font-weight: bold;
+	color: #1b1d21;
+}
+
+.item_info{
+	position: absolute;
+	top: 250px;
+	margin: 0 auto;
+	width: 230px;
+	text-align: center;
+}
+
+.recipe_wrap{
+	width: 100%;
+	height: 1030px;
+	background: #b893f9 url(../image/pattern_recipe.png) repeat-x center center;
+	background-color: #b893f9;
+}
+
+.recipe_background_wrap{
+	background: url(../image/section_recipe.png) no-repeat center center;
+	width: 100%;
+	height: 1030px;
+	position: relative;
+}
+
+.cake_recipe{
+	position: absolute;
+	width: 480px;
+	height: 482px;
+	left: 50%;
+	top: 36.3%;
+	margin-left: -490px;
+}
+
+.tart_recipe{
+	position: absolute;
+	width: 480px;
+	height: 482px;
+	left: 50%;
+	top: 36.3%;
+	margin-left: 10px;
+}
+
+.recipe_link{
+	width: 310px;
+	height: 91px;
+	display: block;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -155px;
+}
+
+.button_over{
+	display: none;
+}
+
+.recipe_link:hover .button_over,
+.recipe_link:focus .button_over{
+	display: block;
+}
+
+.recipe_link:hover .button_img,
+.recipe_link:focus .button_img{
+	display: none;
+	margin: 0 auto;
+}
+
+.faq_wrap{
+	margin-top: 70px;
+	background-color: #fff;
+}
+
+.faq_img_wrap{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.faq_content{
+	margin-top: -1px;
+}
+
+.question_wrap{
+	position: relative;
+	width: 980px;
+	border-top: 1px solid #a1a5ad;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.question_text p::before{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	background: url(../image/icon_question.gif) no-repeat 0 0;
+	content: '';
+	width: 21px;
+	height: 20px;
+}
+
+.question_text{
+	position: relative;
+	max-width: 902px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1b1d21;
+	line-height: 21px;
+	margin-top: 30px;
+	padding: 0 5px 20px 50px;
+}
+
+.arrow_wrap{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 58px;
+	height: 100%;
+}
+
+.arrow{
+	width: 58px;
+	height: 100%;
+	background-color: transparent;
+}
+
+.arrow_up {
+	display: inline-block;
+	background: url(../image/icon_arrow_up.gif) no-repeat center center;
+	width: 58px;
+	height: 100%;
+	color: transparent;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.arrow_down {
+	display: inline-block;
+	background: url(../image/icon_arrow_down.gif) no-repeat center center;
+	width: 58px;
+	height: 100%;
+	color: transparent;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.answer_wrap{
+	width: 980px;
+	margin: 0 auto;
+	background-color: #f7f8fa;
+	border-bottom: 1px solid #a1a5ad;
+	max-height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.answer_off{
+	display: none;
+}
+
+.answer_wrap p{
+	padding: 20px 20px 20px 50px;
+}
+
+.answer_wrap p::before{
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	background: url(../image/icon_answer.gif) no-repeat 0 0;
+	content: '';
+	width: 21px;
+	height: 17px;
+}
+
+.answer_wrap p{
+	font-size: 16px;
+	color: #60656e;
+	line-height: 28px;
+}
+
+.faq_content:last-child{
+	margin-bottom: 100px;
+}
+
+.top_icon{
+	position: fixed;
+	right: 0;
+	bottom: 180px;
+	z-index: 2;
+}
+
+footer{
+	width: 100%;
+	height: 80px;
+	background-color: #e0e4eb;
+	font-size: 18px;
+	color: #70757d;
+}
+
+.footer_text{
+	text-align: center;
+	padding-top: 30px;
+}

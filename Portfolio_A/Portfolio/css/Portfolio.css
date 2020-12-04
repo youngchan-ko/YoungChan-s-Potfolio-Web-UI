@@ -1,0 +1,622 @@
+@charset "UTF-8";
+
+/* Reset */
+html, body, div, span,
+ p,
+a, em, img, strong, b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, footer, header, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+	}
+
+h1, h2, h3, h4, h5, h6,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+a{
+	text-decoration: none;
+}
+
+ol{
+    list-style-type: none;
+}
+/* Reset */
+
+
+
+
+
+body,button,input,select,table,textarea{
+    font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, 'sans-serif'
+    }
+
+
+.header{
+    background-color: #000;
+    height: 120px;
+    }
+
+
+.title{
+    background-color: #000;
+    width: 1040px;
+    padding: 20px 0px 20px 40px;
+    font-size: 40px ;
+    color: #fff;
+    margin: auto;
+    line-height: 80px;
+    }
+
+
+.menu{
+    margin: 40px auto;
+    width: 1000px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    }
+
+
+.menuitem{
+    width: 321px;
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    height: 33px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 33px;
+    margin-right: 14px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    }
+
+
+.menuitem:last-child{
+	margin-right: 0;
+	}
+
+
+.menuitem a{
+    display: inline-block;
+    width: 323px;
+    height: 35px;
+
+    }
+
+
+.menuitem:hover{
+    font-weight: bold;
+    border-color: #454545;
+    }
+
+
+.subtitle{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    width: 1000px;
+    margin: auto auto 30px auto;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1d1d1;
+    }
+
+
+.topbox{
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    padding-left: 15px;
+    width: 983px;
+    height: 46px;
+    line-height: 46px;
+    margin: 0px auto;
+    }
+
+
+.bottombox{
+    border: 1px solid #d1d1d1;
+    font-size: 12px;
+    color: #000;
+    padding: 30px;
+    width: 938px;
+    margin: -1px auto 30px;
+    }
+
+
+.first-table{
+	width: 100%;
+	table-layout: fixed;
+	font-size: 12px;
+	}
+
+
+caption{
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 14px;
+	}
+
+
+.kids-size{
+    background-color: #fbfbfb;
+	}
+
+
+.first-table td  {
+	border: 1px solid #e4e4e4;
+    color: #555;
+    text-align: center;
+    height: 35px;
+	vertical-align: middle;
+	}
+
+
+.first-table th{
+	border: 1px solid #e4e4e4;
+    color: #555;
+    text-align: center;
+    height: 35px;
+	vertical-align: middle;
+	}
+
+
+.second-table{
+	font-size: 12px;
+	color: #555;
+	width: 100%;
+    table-layout: fixed;
+	vertical-align: middle;
+	line-height: 35px;
+	}
+
+
+.second-table-firstcol{
+    width: 40%;
+}
+
+
+.second-table-col{
+    width: 20%;
+}
+
+
+.second-table caption{
+	margin-top: 50px;
+	}
+
+
+.second-table thead{
+	border-top: 2px solid #a5a5a5;
+	border-bottom: 1px solid #e4e4e4;
+	background-color: #fbfbfb;
+	height: 35px;
+	}
+
+
+tbody .price{
+	height: 35px;
+	}
+
+
+.second-table tfoot{
+	border-top: 2px solid #a5a5a5;
+	border-bottom: 1px solid #e4e4e4;
+	font-weight: bold;
+	height: 35px;
+	}
+
+
+.second-table-left{
+	text-align: center;
+	}
+
+
+.price{
+	text-align: right;
+	padding-right: 50px;
+	}
+
+
+.join{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+	}
+
+
+.formcontent{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	border: 1px solid #e4e4e4;
+	background-color: #fbfbfb;
+	padding: 20px;
+	}
+
+
+.bottombox{
+	line-height: 20px;
+	}
+
+
+input{
+	margin-bottom: 10px;
+	}
+
+
+.persnalinfo{
+	font-size: 12px;
+	color: #000;
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	}
+
+
+.persnalinfo-title{
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+
+.birthday{
+	height: 26px;
+	width: 294.6px;
+	margin-bottom: 10px;
+	}
+
+.blind{
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+.gendertext{
+	margin-right: 60px;
+	font-size: 12px;
+	color: #000;
+	font-weight: normal;
+	}
+
+
+.emailinput{
+	width: 99.4%;
+	height: 20px;
+	font-size: 12px;
+	color: #000;
+	}
+
+
+.tel{
+	height: 20px;
+	width: 78.6%;
+	font-size: 12px;
+	color: #000;
+	}
+
+
+.certify{
+	border: 1px solid #08a600;
+	background-color: #4ec53d;
+	font-size: 12px;
+	color: #fff;
+	width: 20%;
+	height: 25px;
+	cursor: pointer;
+	}
+
+
+.certifynum{
+	font-size: 12px;
+	color: #000;
+	width: 99.4%;
+	height: 20px;
+	}
+
+
+.checkboxtext{
+	margin-right: 52px;
+	font-size: 12px;
+	color: #000;
+	font-weight: normal;
+	}
+
+
+.greetinginput{
+	font-size: 12px;
+	color: #000;
+	width: 99.4%;
+	text-align: left;
+	}
+
+
+.joinbotton{
+	border: 1px solid #08a600;
+	background-color: #4ec53d;
+	font-size: 16px;
+	color: #fff;
+	width: 100%;
+	height: 40px;
+	cursor: pointer;
+	}
+
+
+.list-title{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	}
+
+
+.project-list{
+	border: 1px solid #e4e4e4;
+	margin-bottom: 30px;
+	}
+
+
+.fir-list-title{
+	font-size: 32px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	line-height: normal;
+	margin-top: 35px;
+	}
+
+
+.main-dt{
+	font-size: 14px;
+	color: #000;
+	font-weight: bold;
+	}
+
+
+.sub-dt{
+	font-size: 12px;
+	color: #559bfa;
+	}
+
+
+dd{
+	font-size: 12px;
+	color: #000;
+	margin-bottom: 30px;
+	}
+
+
+.main-dt, dd{
+	padding-left: 20px;
+	}
+
+
+.realtime-list{
+	padding: 20px 0 20px 18px;
+	border: 1px solid #e4e4e4;
+	width: 25%;
+	text-align: left;
+	margin-bottom: 30px;
+	}
+
+
+.ol-list{
+	padding: 2px;
+	}
+
+
+.ol-listnum{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #e0e0e0;
+	font-size: 10px;
+	color: #666;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 17px;
+	display: inline-block;
+}
+
+
+.ol-list-link{
+	display: inline-block;
+	font-size: 12px;
+	color: #000;
+}
+
+
+.ol-list-link:hover{
+	text-decoration: underline;
+}
+
+
+.ul-border{
+	border: 1px solid #e4e4e4;
+	margin-bottom: 30px;
+}
+
+
+.ul-list{
+	padding-left: 25px;
+	font-size: 12px;
+	color: #000;
+}
+
+
+.ul-highlight-blue{
+	color: #559bfa;
+	font-weight: bold;
+}
+
+
+.ul-highlight-red{
+	color: #ec5336;
+}
+
+
+.ul-link{
+	text-decoration: underline;
+	color: #559bfa;
+	font-size: 12px;
+}
+
+
+.news-border{
+	border: 1px solid #e4e4e4;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+
+
+.news-link{
+	width: 80px;
+	float: left;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+
+.news-article:after{
+	clear: both;
+	content: '';
+}
+
+
+.news-title{
+    display: block;
+	font-size: 14px;
+	color: #00c;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+.news-article{
+	font-size: 12px;
+	color: #000;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+
+.news-article:last-child{
+	border-bottom: 0px;
+}
+
+
+.webtoon-border{
+	border: 1px solid #e4e4e4;
+	padding-left: 20px;
+	padding-bottom: 30px;
+}
+
+
+.webtoon-item{
+	margin-top: 20px;
+	margin-right: 16px;
+	display: inline-block;
+}
+
+
+.webtoon-item:hover{
+	text-decoration: underline;
+}
+
+
+.webtoon_ol li:nth-child(3n+3){
+	margin-right: 21px;
+}
+
+
+.webtoon-images{
+	display: block;
+    width: 285px;
+    height: 140px;
+}
+
+
+.cut-toon{
+	border: 1px solid #71b036;
+	background-color: #80c83d;
+	font-size: 10px;
+	color: #fff;
+	display: inline-block;
+	line-height: 14px;
+	padding: 1px 4px;
+	text-align: center;
+}
+
+
+.smart-toon{
+	border: 1px solid #df4e28;
+	background-color: #ec5336;
+	font-size: 10px;
+	color: #fff;
+	display: inline-block;
+	line-height: 14px;
+	padding: 1px 4px;
+	text-align: center;
+}
+
+
+.webtoon-title{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+	display: inline-block;
+}
+
+
+.webtoon-episode{
+	font-size: 12px;
+	color: #000;
+}
+
+
+h4{
+	margin-bottom: 10px;
+}
+
+
+footer{
+    margin-top: 40px;
+    border-top: 1px solid #d1d1d1;
+    text-align: center;
+    }
+
+
+.foottop{
+    font-size: 12px;
+    color: #999;
+    }
+
+
+.footbottom{
+    font-size: 12px;
+    color: #000;
+    }
